@@ -1,0 +1,508 @@
+			Devops 4/26/20
+Devops
+
+github 
+
+jenkins
+
+____________________________________________________________________________________________________
+			Devops 4/27/20
+
+Github
+
+crtl s to run code
+
+____________________________________________________________________________________________________
+			Devops 4/30/20
+
+
+CI -> Jenkins tools and software 
+-RHEL 8
+
+
+
+Goups GIT Basic linux <--data and cat command
+
+
+
+use yum command to download software
+
+
+
+yum command downloads the software so yeah
+
+
+
+Jenkins is created by java
+
+
+
+java -version
+
+
+
+Java is owned by SUN Microsystems
+
+
+
+But Oracle IBM Microsoft and other companies have there own versions
+
+
+yum  list   |  grep openjdk
+
+
+This will list avaliable stuff for downloads
+
+
+Jenkin is a type of server
+
+
+If you open the IP port then you will get to jenkins
+
+
+The topic is file
+
+
+The file contains you password
+
+
+Initially you have to use it but you can change it
+
+
+It takes some time to set up
+
+
+You don't want to add any plugins
+
+
+You have to manage users
+
+
+Your user name is always admin
+
+
+The password can be anything
+
+
+The redhat system  -download linux---firefox
+
+
+Jenkins is a CI tool
+
+
+Continuios deployment
+
+
+
+Operations team keeps eye on github
+
+
+We can acess anytime what to do
+
+
+If you want to run any command, then do something
+
+
+Run the date command
+
+
+Redhat is working fine
+
+
+Basic tools that you can tell jenkins
+
+
+Jenkins doesn't know [by default] the tools
+
+
+if you want to make jenkins smart, then add plugiins to download jenkins smart
+
+
+jenkins AWS DOCKER OPS 
+
+
+This is a plugin for indicating github
+
+
+We only download one due to dependency
+
+
+Github commands are not required due to '
+
+
+Jenkins have power to write
+____________________________________________________________________________________________________________________________________________
+						5/1/20
+
+Jenkins can do anything
+
+
+
+
+_________________________________________________________________________________________________________________________________________________________
+						5/4/20
+
+
+Whatever products we implement, there are many tools that intergate with each other
+
+
+
+			Somethings that we have learned today:
+
+1.Intergate Jenkins with Docker
+
+
+
+2.Used cases of Jenkins, Docker
+ 
+
+3.Chaining between jobs
+
+
+4.Jenkins server
+
+
+
+
+			  Notes:
+
+If you want to download a program/service, youll need Operating System
+
+
+
+Os - UM (Virtual)
+
+
+
+Program/service --> [Container] - (Also known as provisioning) installed but login
+
+
+
+Docker is Agile/rapid
+
+
+
+It will start provision you 
+
+
+
+Dockerhub is the placed to download docker
+
+
+
+They don't give 
+
+
+
+docker images is used to check if you have docker
+
+
+
+docker  run   -t -i --name myos1 ubuntu 
+
+
+
+docker ps tells you how many os 
+
+
+
+Docker has own ip 
+
+
+
+Ubuntu command os apt 
+
+
+
+exit to get out from docker
+
+
+COmputer -> github -fitch--> Jenkins deployed
+	    Rhel 8     | 	
+                  |    |
+		  |    v   	
+       System -> OS -> Webserver
+	^	
+	| 
+	|
+	Manual and fast
+
+
+Docker image for webserver
+
+
+
+httpd for the webserver which they already made avaliable
+
+
+
+If you want to use the image, do docker pull httpd
+
+
+
+httpd 
+______
+
+Own dockerimage  
+
+has -webserver OS
+
+
+
+If someone asks you to download 
+
+
+
+docker run to launch OS
+
+
+
+docker run -d -t -i --name myweb1    httpd
+
+
+
+You'll its not docker because the d is detach
+
+
+
+Running one command, your container technology they configure the webserver for you
+
+
+
+client can connect to webserver
+
+
+
+since docker has its own ip you can check it by typing IP
+
+
+
+We'll use the same setup and the same envolvement for httpd
+
+
+
+run docker ten times to create 10 OS servers
+
+
+[index.html   ]
+[Ubuntu server]
+[O.S.	      ]	
+[Phy          ]
+
+
+
+You can check the commands of docker by doing man docker
+
+
+
+copy/deploy
+
+
+
+cat index.html
+
+
+
+You have to copy he os from the folder
+
+
+
+cp to copy
+
+
+
+keep on changing the code
+
+
+
+-----------------------------------------
+mkdir /lwweb
+
+cd /lwweb
+
+ls
+
+cat > index.html
+
+
+cat > lw.html
+
+
+cat > samsweb.html
+------------------------------------------------------------
+
+Instead of copy
+
+
+
+its operated in /lwweb:/usr/local/apache2/html
+
+
+-------------------------------------------------------------------
+cd /lwweb/
+
+pwd
+
+/lwweb
+
+ls
+__________________
+VM
+|
+\
+ v
+[RHEL]
+_______________________________
+
+httpd
+|    \
+[IP]  v
+       docker
+
+_____________________________________
+			docker
+                           \
+			
+When you launch any OS  ===ENV 
+
+
+
+security reason, they launch the os 
+
+
+
+security  -> Isolated
+
+
+		Rhel 8
+	_______________________
+	[docker]          [docker]
+	IP___|_________________|___IP
+
+
+
+Inside Redhat, 2 OS are running
+
+
+
+In the OS, webserver is running
+
+
+
+ipconfig
+
+
+
+the outside world can connect with the IP adress
+
+
+
+Ask the outside world, if you want to connect to the Docker I have, In the system, ask the system to connect
+
+
+
+The computer will ask the owner of the docker and give permission to come in
+
+Client
+|
+|
+v
+IP
+RHEL8          docker
+---------------------------------
+
+
+[/;wweb]      [/userlexl----------/
+----------------------------------------------------------
+
+
+		   [Client]-------- /
+				   /
+                    |-------------/
+[JENKINS] -------->[RHEL 8]
+\
+ \
+  JOB -> github 9down -> copy
+    |                     
+    ----job -> deploy [ENV] 
+
+------------------------------------------------------------------
+
+win---
+     |
+     v
+  [DEV]
+    |
+    --->6 month
+
+---------------------------------------------------------------------
+Repo in git and jenkins
+
+
+
+
+jenkins all=(all)
+
+
+
+jenkins power password
+
+
+
+jenkins power is equivelent to root user
+
+
+
+sudo cp -v -r -f * /
+
+
+
+if date 
+
+
+
+TO shut down:
+
+
+: you can check from jenkins
+
+
+We achieved job 1 and 2
+
+
+
+github
+  |
+  v
+job1
+
+
+Basically you might need to know html in order to know this 
+
+
+OS is running inside the java
+
+
+
+Job1 
+ |
+ v
+Job2
+
+downstreamed from job1 to job2
+
+
+
+Without touching a job you can do stuff
+
+
+
+If it is sucessful it will do it on job2
+
+
+downstream projects are seen with associated server so in this case job 1
+
+
+
+
+
